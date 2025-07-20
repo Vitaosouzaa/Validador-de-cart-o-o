@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Bandeira de Cartão</title>
+
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <header>
+        <h1>Validador de Cartão New Vision Technologies</h1>
+        <img src="assets/img/logo1-removebg-preview.png" alt="">
+    </header>
+
+<!-- 1-Adicione um Campo de Entrada:
+Insira um campo de entrada (<input>) para o usuário digitar o número do cartão.
+Use o atributo type="text" ou type="number" para restringir a entrada. -->
+
+<!-- 2-Adicione um Botão de Validação:
+Insira um botão (<button>) que o usuário pode clicar parai validar o número do cartão. -->
+
+    <main class="container">
+        <img src="assets/img/logo2.png" alt="">
+        <form class="card-number" action="#">
+            
+            <section class="infos">
+                <h1>Validador de Cartão de Crédito</h1>
+                <label for="number">Adicione o número do cartão</label><br>
+            </section>
+
+            <input type="text" id="card-number" 
+            .inputmode="numeric" autocomplete="cc-number" 
+            maxlength="19" pattern="[0-9]{12,19}" 
+            placeholder="0000 0000 0000 0000"
+            required>   
+
+            <!-- 3-Adicione uma Área de Resultado:
+            Insira um elemento como <div> ou <p> para exibir o resultado da validação (se o cartão é válido e qual é a bandeira). -->
+            <div id="result" role="alert">
+                <p></p>
+            </div>
+
+            <button id="validate-btn">Validar Cartão</button>
+        </form>
+    </main>
+
+
+<footer>
+    &copy; 2025  New Vision Technologies. Todos os direitos reservados.
+     <img class="img-footer" src="assets/img/logo1-removebg-preview.png" alt="logo">
+        
+</footer>
+
+
+<script src="src/script/index.js"></script>
+<script src="src/script/validation.js"></script>
+</body>
+</html>
